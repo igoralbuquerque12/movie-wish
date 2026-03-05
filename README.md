@@ -11,32 +11,24 @@
 
 ---
 
-## 🎯 Por que este projeto se destaca? (Pitch para Recrutadores)
+## 🎯 Por que este projeto?
 
-Este projeto foi desenvolvido com foco em **boas práticas, escalabilidade e integração de sistemas**. Ele demonstra de ponta a ponta o desenvolvimento de uma aplicação full-stack moderna:
+Este projeto foi desenvolvido com foco em aprimorar **boas práticas, novos conhecimentos em desenvolvimento mobile e integração de sistemas**. Ele demonstra de ponta a ponta o desenvolvimento de uma aplicação full-stack:
 
 * **Arquitetura Backend Sólida (NestJS & Prisma):** API RESTful construída com NestJS (TypeScript), utilizando Prisma como ORM para gerenciar o banco de dados PostgreSQL. Segurança de rotas garantida através de autenticação por JWT.
 * **Aplicativo Mobile Dinâmico (Flutter):** Interface rica e responsiva com Flutter. Comunicação eficiente utilizando o pacote `dio` com interceptors para injeção de tokens de autorização e tratamento global de erros.
 * **Integração com APIs Externas (TMDb):** Consumo da API do _The Movie Database_ para consultar listagens de filmes, detalhes e sistema de recomendação (M2M / External API Integration).
 * **Gestão de Perfil do Usuário:** Fluxo completo que vai desde o cadastro, login, gerenciamento de gêneros favoritos até a adição/remoção de itens em uma lista de desejos persistida.
-* **Código de Produção:** Separação clara de responsabilidades no Flutter (Camada Presentation vs. Data/Services) e Modularização no NestJS (AppModule, AuthModule, UserModule).
 
 ---
 
 ## 📸 Capturas de Tela (Screenshots)
 
-> **Dica de Dev:** Adicione prints das principais telas aqui abaixo para dar uma visão imediata ao leitor de como o app ficou!
-
 <div align="center">
-  <!-- Substitua pelos caminhos dos seus prints após tirar os screenshots -->
-  <img src="./docs/prints/splash.png" width="200" alt="Splash Screen">
-  <img src="./docs/prints/login.png" width="200" alt="Login Screen">
-  <img src="./docs/prints/home.png" width="200" alt="Home Screen">
-  <img src="./docs/prints/movie_details.png" width="200" alt="Detalhes do Filme">
-  <img src="./docs/prints/profile.png" width="200" alt="Perfil e Favoritos">
-</div>
+  <img width="757" height="488" alt="image" src="https://github.com/user-attachments/assets/766590fc-7f7a-46b3-a9c7-c9e51f6bdc9c" />
 
-*Caminhos sugeridos: tire as prints do seu emulador e coloque na pasta `docs/prints/` e descomente as tags acima.*
+  <img width="760" height="476" alt="image" src="https://github.com/user-attachments/assets/8f535ec7-0bec-4412-af3d-03b9123cec7c" />
+</div>
 
 ---
 
@@ -120,10 +112,3 @@ flutter run
 3. **Wishlist:** Na tela `movie_details_screen`, o usuário pode favoritar um filme (ícone de coração). Isso detona a rota POST `/user/add-movie` (recebendo o ID do filme) que o Prisma ORM persiste numa array de `wishMovies` do PostgreSQL.
 4. **Recomendações:** A plataforma usa as escolhas de gêneros favoritos registradas (rota Profile/Me) para trazer listagens mais afiadas.
 
----
-
-### 🎓 Mensagem Final ao Leitor
-
-O **WishFlix** não é apenas um app "cliente de API", ele interliga perfeitamente autenticação em rede fechada com requisições extensas em serviços abertos, lidando com persistência de favoritação trans-api. Foi planejado para demonstrar claramente o entendimento de ecossistemas Full-Stack, arquitetura cliente-servidor, gerenciamento assíncrono e segurança usando os frameworks padrões da indústria atual.
-
-<p align="center">Feito com 🩵 e muito código por <b>Igor Cavalcante</b> (adaptar nome se precisar).</p>
